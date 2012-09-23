@@ -75,7 +75,7 @@ class Job(object):
             job._func_name = func
         job._args = args
         job._kwargs = kwargs
-        job.description = job.get_call_string()
+        job.description = job._func_name
         job.result_ttl = result_ttl
         job._status = status
         return job
